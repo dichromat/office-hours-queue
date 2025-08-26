@@ -1,0 +1,29 @@
+{
+  "name": "office-hours-queue",
+  "version": "1.0.0",
+  "description": "Electronic queue system to manage my office hours",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "build-c": "cd oh-client && npm run build && cd ..",
+    "dev-c": "npm run build-c && npm run dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "google-auth-library": "^10.2.1",
+    "http": "^0.0.1-security",
+    "node-fetch": "^2.7.0",
+    "passport-google-oauth20": "^2.0.0",
+    "path": "^0.12.7",
+    "socket.io": "^4.8.1"
+  }
+}
